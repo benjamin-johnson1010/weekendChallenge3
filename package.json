@@ -7,7 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/app.js"
   },
-  "author": "",
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "benjaminjohnson",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
