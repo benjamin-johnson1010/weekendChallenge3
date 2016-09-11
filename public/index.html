@@ -1,27 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Weekend Challenge #3</title>
-    <script src="vendors/jquery-3.1.0.min.js"></script>
-    <script src="scripts/client.js"></script>
-    <link rel="stylesheet" href="vendors/bootstrap.min.css">
-    <link rel="stylesheet" href="styles/main.css">
-  </head>
-  <body>
-    <div class="calculator">
+<head>
+  <meta charset="utf-8">
+  <title>Weekend Challenge #3</title>
+  <script src="vendors/jquery-3.1.0.min.js"></script>
+  <script src="scripts/client.js"></script>
+  <link rel="stylesheet" href="vendors/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="calculator">
     <div id="numberInputs">
-    <p>Enter First number here:<input class="numberIn" id="numberOneIn" type="number" placeholder="First Input"></input></p>
-    <p>Enter Second number here:<input class="numberIn" id="numberTwoIn" type="number" placeholder="Second Input"></input></p>
+      <p class ="inputOne">Enter Number here: </p>
+      <p class = "inputTwo">Enter Second number here: </p>
     </div>
+    <div class="row">
+    <button class="clear-button">C</button>
+    <button class="decimal-button" data-type=".">.</button>
+    <button class="equal-button">=</button>
     <button class="math-button" data-type="add">+</button>
-    <button class="math-button" data-type="subtract">-</button>
-    <button class="math-button" data-type="multiply">*</button>
-    <button class="math-button" data-type="divide">/</button>
-    <button class="clear-button">Clear</button>
-    <div class="displayAnswer">
-    <h2>Answer:</h2>
   </div>
-</div>
-  </body>
+    <div class="row">
+      <button id="num" class="num-button" data-type="7">7</button>
+      <button class="num-button" data-type="8">8</button>
+      <button class="num-button" data-type="9">9</button>
+      <button class="math-button" data-type="subtract">-</button>
+    </div>
+    <div class="row">
+      <button class="num-button" data-type="4">4</button>
+      <button class="num-button" data-type="5">5</button>
+      <button class="num-button" data-type="6">6</button>
+      <button class="math-button" data-type="multiply">*</button>
+    </div>
+    <div class="row">
+      <button class="num-button" data-type="3">3</button>
+      <button class="num-button" data-type="2">2</button>
+      <button class="num-button" data-type="1">1</button>
+      <button class="math-button" data-type="divide">/</button>
+    </div>
+    <div class="displayAnswer">
+      <p>Answer:</p>
+    </div>
+  </div>
+</body>
 </html>
