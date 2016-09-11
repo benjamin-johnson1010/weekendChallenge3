@@ -53,6 +53,12 @@ $(document).ready(function(){
       success: function(data){
         console.log(data);
         $('.displayAnswer').html('<h3>' + data + '</h3>');
+        $('.inputOne').html('Enter Number here:');
+        $('.inputOne').show();
+        $('.inputTwo').hide();
+        xIn = '';
+        yIn = '';
+        opVal = '';
       }
     });
   });
