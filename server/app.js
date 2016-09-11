@@ -4,9 +4,10 @@ var bodyParser = require('body-parser');
 var urlencodedParser = bodyParser.urlencoded({extended: false});
 var path = require('path');
 
+var portDecision = listen(process.env.PORT || 3000);
 
-app.listen('5000', 'localhost', function(){
-  console.log('listening in 5000');
+app.listen(portDecision, function(req, res){
+  ;
 });
 app.get('/', function(req, res){
   console.log('base url hit');
